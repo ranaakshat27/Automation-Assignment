@@ -1,0 +1,237 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9                                                                   \b Assignment-12\par
+                                                                Types of Testing \par
+\b0 1) What are the different types of Testing. Explain each in 5 key points.\par
+Ans: The different types of testing are as follows :\par
+\b 1.) On the basis of code :-\par
+
+\pard\sa200\sl276\slmult1\b0       a.    White Box -\b\par
+\b0        b.    Black Box - \b\par
+
+\pard\sa200\sl276\slmult1 2.) On the basis of functionality\par
+
+\pard 
+{\pntext\f0 a.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pnlcltr{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\b0  Functional - \par
+{\pntext\f0 b.\tab}Non Functional -\par
+
+\pard 
+{\pntext\f0 i.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pnlcrm{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1 Security\b\par
+{\pntext\f0 ii.\tab}\b0 Automation\b\par
+{\pntext\f0 iii.\tab}\b0 Performance\b\par
+{\pntext\f0 iv.\tab}\b0 Load\b\par
+{\pntext\f0 v.\tab}\b0 Stress\b\par
+{\pntext\f0 vi.\tab}\b0 Volume\b\par
+{\pntext\f0 vii.\tab}\b0 Recovery\b\par
+{\pntext\f0 viii.\tab}\b0 Usability\b\par
+{\pntext\f0 ix.\tab}\b0 Compatibility\b\par
+{\pntext\f0 x.\tab}\b0 Configuration\b\par
+{\pntext\f0 xi.\tab}\b0 Concurrency\b\par
+
+\pard\sa200\sl276\slmult1 3.) On the basis of tools\par
+
+\pard 
+{\pntext\f0 a.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pnlcltr{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\b0 Manual -\par
+{\pntext\f0 b.\tab}Automation -\par
+
+\pard\sa200\sl276\slmult1\par
+2) List five key differences Smoke Testing Vs Sanity Testing ? Explain with Real life Example.\par
+Ans: Differences are as -\par
+\b Smoke Testing - \b0 It is the initial and surface level testing.\par
+                               It is used for build acceptance testing (BAT)\par
+                               Blocker or Critical test cases are executed from each component of the product,    Thus it also covers some parts of functional testing.\par
+                               If the build passes the smoke test, then it is accepted by QA for further testing. \par
+                               If the build fails the smoke test then its rejected and QA revert back to previously accepted build.\par
+                               Ex: Verify that the application launches successfully,\par
+                                      Check that the GUI is responsive.  \b\par
+Sanity Testing - \b0 It is the surface level testing performs after smoke.\par
+                              Here the QA verifies that all the functions, commands present in the product is properly working or not.\par
+                              It has been performed after the build test has passed .\par
+                              During sanity testing not all the test cases are executed, only performs some high level user scenarios which will be performed by real time users.\par
+                               It is not performed in depth.\par
+                               It will be performed when some changes in the code occurs.\par
+                               It also confirms that the build generated after compilation process has not any errors causing any failure. \b\par
+\par
+
+\pard\sa200\sl276\slmult1\b0 3) Difference between alpha testing and beta testing ? \par
+Ans: Differences are as -\par
+\b Alpha Testing - \b0 It is the initial level of testing.\par
+                             It is performed within the organisation.\par
+                             Involves both white box and black box testing.\par
+                             It is performed by the testers who are employees of the organisation.\par
+                             It is performed at the developer end.\par
+                             Reliability and security testing are not checked here.\par
+                             It ensures the quality of the product before forwarding to beta testing.\par
+\b Beta Testing - \b0 It is performed after the alpha testing.\b\par
+                           \b0 It is performed in the users environment.\par
+                           It uses black box testing.\par
+                           It is performed by the clients who are not part of the organisation.\par
+                           It is performed at the end user of the product.\par
+                           Reliability and security are checked here.\par
+\b                            \b0 It also works on quality of the product but also collect users input on the product and ensures that the product is ready for real time users.\b\par
+\par
+\b0 4) Difference between Retesting and Regression Testing ? Explain with Real life Example.\par
+Ans: : Differences are as -\par
+\b Retesting - \b0 Retesting is known as planned testing.\par
+                     It is used to ensure the test cases which failed in last execution are fixed.\par
+                     It is only used for failed test cases.\par
+                     Defect verification is coming under retesting.\par
+                     Retesting can not be automated.\par
+                     Retesting has higher priority than regression testing.\par
+                     Only failed test cases are re-executed during retesting.\par
+                     During retesting test cases can\rquote t be automated.\par
+\b Regression Testing - \b0 It is also known as a generic testing.\tab\par
+                                       It ensures that changes have not affected the unchanged part of product.\par
+                                       It is used for passed test cases.\par
+                                       Defect verification is not coming under regression testing.\par
+                                       Regression testing can be done either in automation or manual testing.\par
+                                       Regression testing has lower priority than retesting testing but in some cases it can be done in parallel with retesting.\par
+                                        Passed test cases can be executed during regression testing.\par
+                                        During regression testing test cases can be automated.\par
+                                        \b\par
+\b0 5) When we can stop the testing ?\par
+Ans: Stop the Testing when deadlines like release deadlines or testing deadlines have reached\par
+Stop the Testing when the test cases have been completed with some prescribed pass percentage.\par
+Stop the Testing when the testing budget comes to its end.\par
+Stop the Testing when the code coverage and functionality requirements come to a desired level.\par
+Stop the Testing when bug rate drops below a prescribed level\par
+Stop the Testing when the period of beta testing / alpha testing gets over.\par
+\par
+6) What is test plan and define its different Parameters.\par
+Ans: \b Test Plan - \b0 A test plan is a detailed document which describes software testing areas and activities. It outlines the test strategy, objectives, test schedule, required resources (human resources, software, and hardware), test estimation and test deliverables.\b\par
+\b0 Different Parameters are as -\par
+\par
+7) Latest version of difference browser ? Which types of bugs find in Black Box testing ?\par
+Ans: Different browsers which have been widely used over are -\par
+Black Box Tesing - The most common defects identified by the black box testing are access errors, interface errors, data errors, and missing functions.\par
+\par
+8) In white box testing, what do you verify ?\par
+Ans: In white box testing we verifies the inner workings of a software system\f1\emdash its code, infrastructure, and integrations with external systems.\f0\par
+\par
+9) What is black box testing ? What are the different black box testing technique ?\par
+Ans: \b Black Box Testing - \b0 Testing without knowledge of coding.\par
+Black box testing techniques are as - Boundary Value Analysis (BVA)\par
+                                                                   Partitioning by Equivalence Class\par
+                                                                   Testing for State Transitions\par
+\par
+10) What are the different test levels ? What are verification and validation ?\par
+Ans: Different Test Levels are as - Unit testing, Integration testing, System testing, and Acceptance testing\par
+\b Verification - \b0 It is the process of checking that a software achieves its goal without any bugs. It is the process to ensure whether the product that is developed is right or not. It verifies whether the developed product fulfills the requirements that we have. Verification is static testing. \par
+Verification means Are we doing the work right ?\par
+\par
+\b Validation - \b0 It is the process of checking whether the software product is up to the mark or in other words product has high level requirements. It is the process of checking the validation of product i.e. it checks what we are developing is the right product. it is validation of actual and expected product. Validation is the dynamic testing. \par
+Validation means Are we doing the right work ?\par
+\par
+11) What is the difference between UAT (User Acceptance Testing) and System testing ?\par
+Ans: The differences are as -\par
+\b UAT - \b0 It is the type of testing which is used to check whether the software meets the customer requirements or not.\par
+used by testers, stakeholders as well as clients.\par
+It is only functional testing.\par
+It is the constitute of alpha and beta testing.\par
+It  is done after the System testing.\par
+In acceptance testing, system is checked for random inputs.\par
+\b System Testing - \b0 It is done to check whether the software or product meets the specified requirements or not.\par
+It is used by developers as well as testers.\par
+It is both functional and non-functional testing.\par
+It is the constitute of System and integration testing.\par
+It is done before the Acceptance testing.\par
+In system testing, system is checked for dummy inputs.\par
+\par
+12) What is mutation testing ?\par
+Ans: Not explained !\par
+\par
+13) What are the important steps that are covered in Functional testing ?\par
+Ans: \b Functional testing - \b0 Identify function that is to be performed.\par
+Create input data based on the specifications of function.\par
+Determine the output based on the specifications of function.\par
+Execute the test case.\par
+Compare the actual and expected output.\par
+\par
+14) What is Automation testing ?\par
+Ans: \b Automation testing - \b0 It is used some specific tools to execute the test scripts without any human interference. It is the most acceptable way to enhance the efficiency, productivity, and test coverage of Software testing.\par
+With the help of an automation testing tool, we can easily approach the test data, handle the test implementation, and compares the actual output against the expected outcome.\par
+In software testing, automation testing is required to test the application because it offers us a better application with less effort and time.\par
+Some organizations still perform only manual testing to test the application as those companies are not fully aware of the automation testing process.\par
+But now, they are aware of automated testing and executing the test automation procedure in their application development process.\b\par
+\b0\par
+15) Explain the term Stress Testing and Load testing.\par
+Ans: The term are discussed here under.\par
+\b Stress Testing - \b0 Stress testing is a type of software testing that verifies the stability and reliability of the system. This test particularly determines the system on its robustness and error handling under extremely heavy load conditions. \b\par
+Load testing - \b0 Load Testing is a type of performance testing that determines the performance of a system, software product, or software application under real life based load conditions. \b\par
+\b0\par
+16) How Acceptance testing is importance ? Who does acceptance Testing ? What we do in this\par
+testing ?\par
+Ans: \b Acceptance testing - \b0 Acceptance testing, a testing technique performed to determine whether or not the software system has met the requirement specifications. The main purpose of this test is to evaluate the system's compliance with the business requirements and verify if it is has met the required criteria for delivery to end users.\b\par
+\b0 An acceptance test is a form of software testing, performed by the customer or end-user. It is typically the final stage of software evaluation, only conducted once the development team is confident that any bugs or errors have been resolved.\par
+\par
+17) What is Random testing / ad-hoc testing ?\par
+Ans: \b Random testing / Ad-hoc testing - \b0 Adhoc testing is a type of software testing which is performed informally and randomly after the formal testing is completed to find out any loophole in the system. For this reason, it is also known as Random testing or Monkey testing. Adhoc testing is not performed in an structured way so it is not based on any methodological approach. That\rquote s why Adhoc testing is a type of Unstructured Software Testing. \b\par
+\b0\par
+18) What is Functional Testing ? List various testing which come under this category ?\par
+Ans: \b Functional Testing - \b0 It is a type of software testing which is used to verify the functionality of the software application, whether the function is working according to the requirement specification. In functional testing, each function tested by giving the value, determining the output, and verifying the actual output with the expected value. Functional testing performed as black-box testing which is presented to confirm that the functionality of an application or system behaves as we are expecting. It is done to verify the functionality of the application.\par
+Functional testing also called as black-box testing, because it focuses on application specification rather than actual code. Tester has to test only the program rather than the system.\par
+Unit Testing.\par
+Integration Testing.\par
+Interface Testing.\par
+System Testing.\par
+Regression Testing.\par
+Smoke Testing.\par
+Sanity Testing.\par
+Acceptance Testing.\b\par
+\b0\par
+19) What is Non Functional Testing ? List various testing which come under this category ?\par
+Ans: \b Non Functional Testing - \b0 Non-functional testing is a type of software testing to test non-functional parameters such as reliability, load test, performance and accountability of the software. The primary purpose of non-functional testing is to test the reading speed of the software system as per non-functional parameters. The parameters of non-functional testing are never tested before the functional testing.\par
+Non-functional testing is also very important as functional testing because it plays a crucial role in customer satisfaction.\par
+Performance Testing\par
+Load Testing\par
+Security Testing\par
+Portability Testing\par
+Accountability Testing\par
+Reliability Testing\par
+Efficiency Testing\par
+\par
+20) What is GUI Testing ?\par
+Ans: \b GUI Testing - \b0 Graphical User Interface Testing (GUI) Testing is the process for ensuring proper functionality of the graphical user interface (GUI) for a specific application.GUI testing generally evaluates a design of elements such as layout, colors and also fonts, font sizes, labels, text boxes, text formatting, captions, buttons, lists, icons, links, and content. GUI testing processes may be either manual or automatic and are often performed by third-party companies, rather than developers or end users. \par
+\par
+21) What is Input Domain Testing ? What are the techniques will be used in IDT ?\par
+Ans: \b Input Domain Testing - \b0 Domain testing is a testing process where the software is tested to ensure it doesn't accept invalid or out-of-range values. The output is tested against a minimum number of inputs to see whether the system is accepting the input within the required range or not. The white box testing is a perfect example of domain testing.\b\par
+\b0 Decide what can go wrong with boundaries.\par
+Find the way to handle each case.\par
+Pick several points to test for each recognized error.\par
+Use one test point to check the adjacent domains.\par
+Check off redundant test points. ...\par
+Determine if any boundaries are faulty.\par
+Verify each boundary of all the domains.\par
+\par
+22) What is database Testing ?\par
+Ans: Database Testing is a type of software testing that checks the schema, tables, triggers etc. of the database under test. It involves creating complex queries for performing the load or stress test on the database and check its responsiveness. It checks integrity and consistency of data.\par
+Database testing usually consists of a layered process that includes the User Interface (UI) layer, the business layer, the data access layer and the database.\par
+\b Objective of the Database Testing:\par
+\b0 Ensure Data Mapping:\par
+It checks whether the fields in the user interface or front end forms are mapped consistently with the corresponding fields in the database table.\par
+Ensure ACID Properties of Transactions:\par
+Every transaction a database performs has to stick to these four properties: Atomicity, Consistency, Isolation and Durability.\par
+Ensure Data Integrity:\par
+The updated and the most recent values of shared data should appear on all the forms and screens. The value should not be updated on one screen and display an older value on another one. The status should also be updated simultaneously.\par
+Ensure the Accuracy of the Business Rules:\par
+Complex databases leads to complicated components like relational constraints, triggers and stored procedures. Hence in order testers come up with appropriate SQL queries to validate the complex objects.\par
+\par
+\par
+
+\pard\sa200\sl276\slmult1\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+
+\pard\sa200\sl276\slmult1  \b\par
+}
+ 

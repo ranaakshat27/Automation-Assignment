@@ -1,0 +1,176 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}{\f2\fnil\fcharset1 Cambria Math;}{\f3\fnil\fcharset0 Cambria Math;}{\f4\fnil Cambria Math;}{\f5\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.19041}{\*\mmathPr\mmathFont2\mwrapIndent1440 }\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\b\f0\fs28\lang9 Assignment-28\par
+TestNG Framework\par
+\b0\par
+
+\pard\sa200\sl276\slmult1 1. What is TestNg? What are the advantages of TestNG ?\par
+Ans: TestNG is a open source testing framework is commonly used in developing automation testing suites. \par
+NG stands for "Next Generation".\par
+ The advantages of TestNG are :\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Annotations of TestNG are easier to understand as compared to JUnit.\par
+{\pntext\f5\'B7\tab}It is not mandatory to declare @BeforeClass and @AfterClass, in TestNG as compared to JUnit.\par
+{\pntext\f5\'B7\tab}The feature of parametrization provided by TestNG is more convenient and easier to use through dataprovider.\par
+{\pntext\f5\'B7\tab}Features like prioritization and grouping of tests provided by TestNG make it more realistic and adaptable as compared to JUnit.\par
+{\pntext\f5\'B7\tab}TestNG provides the facility of parallel execution in multiple ways compared to JUnit.\par
+
+\pard\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1 2. What are the annotations used in the TestNG ?\par
+Ans: The annotations used in TestNG are :\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 BeforeSuite\par
+{\pntext\f5\'B7\tab}AfterSuite\par
+{\pntext\f5\'B7\tab}BeforeTest\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 AfterTest\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 BeforeClass\par
+{\pntext\f5\'B7\tab}AfterClass\par
+{\pntext\f5\'B7\tab}BeforeMethod\par
+{\pntext\f5\'B7\tab}AfterMethod\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Test Case\par
+
+\pard\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1 3. What are the annotations used in the TestNG ?\par
+Ans: TestNG Annotations are used to control the next method to be executed in the test script. Methods are as :\par
+@BeforeSuite: It will run only once, before all tests in the suite are executed.\par
+@AfterSuite: It will run once after the execution of all tests in the suite is complete.\par
+@BeforeTest: It will be executed before the first @Test annotated method. It can be executed multiple times before the test case.\par
+@AfterTest: It will be executed when all @Test annotated methods complete the execution of those classes inside the <test> tag in the TestNG.xml file.\par
+@BeforeClass: It will be executed before first @Test method execution. It will be executed only once throughout the test case.\par
+@AfterClass: It will be executed after all test methods in the current class have been run.\par
+@BeforeMethod: It will be executed before every @test annotated method.\par
+@AfterMethod: It will be executed after every @test annotated method.\par
+@BeforeGroups: This method will run before the first test run of that specific group.\par
+@AfterGroups: This method will run after all test methods of that group complete their execution.\par
+@Test: To mark a method as a test method.\par
+@Parameters: \par
+@DataProvider: \par
+\par
+4. What is the sequence of execution of all the annotations in TestNG ?\par
+Ans: Sequence of execution of all the annotations in TestNG are :\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 BeforeSuite\par
+{\pntext\f5\'B7\tab}BeforeTest\par
+{\pntext\f5\'B7\tab}BeforeClass\par
+{\pntext\f5\'B7\tab}BeforeMethod\par
+{\pntext\f5\'B7\tab}Test\par
+{\pntext\f5\'B7\tab}AfterMethod\par
+{\pntext\f5\'B7\tab}AfterClass\par
+{\pntext\f5\'B7\tab}AfterTest\par
+{\pntext\f5\'B7\tab}AfterSuite\par
+
+\pard\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1 5. How to set the priorities in TestNG ?\par
+Ans: We can set priority for test cases in order of their execution, by giving priority to each test method. A test method having lower priority runs first then the test methods with higher priority are executed.\par
+The syntax for test priority is @Test (priority = x), where x can be any integer \f1\endash  negative, zero, or positive.\f0\par
+Example\par
+@Test (priority = 1)\par
+public void Username()\par
+  \{\par
+      System.out.println("email");\par
+  \}\par
+@Test (priority = 2)\par
+public void Password()\par
+  \{\par
+      System.out.println ("pass");\par
+  \}\par
+\par
+6. Define grouping in TestNG ?\par
+Ans: Groups in TestNG denotes the process of grouping different tests together into a straight forward group and running these tests together by just running the group in a single command. It does not even matter if they belong to different classes.\par
+Groups are specified in testng.xml file using the <groups> tag. It can be found either under the <test> or <suite> tag. Groups specified in the <suite> tag apply to all the <test> tags underneath.\par
+\par
+7. How to pass the parameter in test case through testng.xml file ?\par
+Ans: Parameterized tests allow to run the same test over and over again using different values.\par
+Parameters are directly  passes to the test methods in two different ways \f2\u8722?\f0\par
+With testng.xml (\lang9 pass the parameter in test case )\par
+With Data Providers (\lang9 pass the parameter to test script )\par
+\ul\b\lang1033 With testng.xml : \ulnone\b0  We\f3  \f0 define\f3  \f0 the\f3  \f0 simple\f3  \f0 parameters\f3  \f0 in\f3  \f0 the\f3  \f0 testng\f3 .\f0 xml\f3  \f0 file\f3  \f0 and\f3  \f0 then\f3  \f0 reference\f3  \f0 those\f3  \f0 parameters\f3  \f0 in\f3  \f0 the\f3  \f0 source\f3  \f0 files.\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Create\f3  \f0 a\f3  \f0 java\f3  \f0 test\f3  \f0 class\f3 , \f0 say\f3 , \f0 ParameterizedTest1\f3 .\f0 java\f3 .\f0\par
+{\pntext\f5\'B7\tab}Add\f3  \f0 test\f3  \f0 method\f3  \f0 parameterTest\f3 () \f0 to\f3  \f0 the\f3  \f0 test\f3  \f0 class\f3 . \f0 This\f3  \f0 method\f3  \f0 takes\f3  \f0 a\f3  \f0 string\f3  \f0 as\f3  an \f0 input\f3  \f0 parameter\f3 .\f0\par
+{\pntext\f5\'B7\tab}Add\f3  \f0 the\f3  \f0 annotation\f3  \f0 @Parameters\f3 (\f0 "myName"\f3 ) \f0 to\f3  \f0 this\f3  \f0 method\f3 . \f0 The\f3  \f0 parameter\f3  \f0 would\f3  \f0 be\f3  \f0 passed\f3  \f0 a\f3  \f0 value\f3  \f0 from\f3  \f0 testng\f3 .\f0 xml\f3 , \f0 which\f3  \f0 we\f3  \f0 will\f3  \f0 see\f3  \f0 in\f3  \f0 the\f3  \f0 next\f3  \f0 step\f3 .\f0\lang9\par
+
+\pard\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1 8. What is the importance of testng.xml file ?\par
+Ans: The importance of testng.xml file are as :\f2\par
+\f4\lang1033 Test cases are executed in groups.\par
+Test methods can be included or excluded in the execution.\par
+The execution of multiple test cases from multiple java class files can be triggered.\par
+Comprises names of the folder, class, method.\par
+Capable of triggering parallel execution.\par
+Test methods belonging to groups can be included or excluded in the execution.\par
+
+\pard\sa200\sl276\slmult1\f0\lang9\par
+
+\pard\sa200\sl276\slmult1 9. How can we disable the test case from running ?\par
+Ans: In such cases, annotation @Test(enabled = false) helps to disable this test case. If a test method is annotated with @Test(enabled = false), then the test case that is not ready to test is bypassed.\par
+\par
+10. How to Write Test Cases in TestNG ?\par
+Ans: The steps to write test cases in testNG :\par
+1.) Create Eclipse Java Project to write a testNG Test Case.\par
+2.) New Java Project to Write a TestNG Test Case.\par
+3.) Add TestNG Library to Write a TestNG Test Case.\par
+4.) Adding TestNG Test Case Class.\par
+5.) Set TestNG Annotations for the TestNG Test Class.\par
+6.) Create test cases and run.\par
+\par
+11. What is parameterization in TestNG ?\par
+Ans: Parameterization in TestNG means we want to pass a parameter into the test with multiple values. Each value will run on the same test, and the output will be generated for the final analysis.\par
+\par
+12. How is TestNG different from Selenium WebDriver ? \par
+Ans: TestNG is an automation testing framework and uses annotations such as @BeforeTest, @AfterTest which makes it more comprehensible.\par
+Test Reports can be generated using TestNG.\par
+Failed test cases can be run separately using TestNG.\par
+\par
+13. How can we make one test method dependent on others using TestNG ? \par
+Ans: Using 'dependsOnMethod' attribute within @Test annotation, we can specify the name of the parent test method on which the test should be dependent. On execution of the whole test class or test suite, the parentTest method will run before the dependentTest.\par
+\par
+14. How can we pass the parameter to test script using TestNG ?\par
+Ans: A Data Provider is a method annotated with @DataProvider. This annotation has only one string attribute: its name. If the name is not supplied, the data provider\rquote s name automatically defaults to the method\rquote s name. A data provider returns an array of objects.\par
+With Data Providers (pass the parameter to test script )\par
+\par
+package Automation.Maven;\par
+import org.testng.annotations.Test;\par
+import io.github.bonigarcia.wdm.WebDriverManager;\par
+import org.openqa.selenium.By;\par
+import org.openqa.selenium.WebDriver;\par
+import org.openqa.selenium.chrome.ChromeDriver;\par
+import org.openqa.selenium.chrome.ChromeOptions;\par
+import org.testng.annotations.DataProvider;\par
+\par
+public class Fb_Data \{\par
+  @Test(dataProvider = "Login")\par
+  public void test(String Email, String Password) \{\par
+\tab   WebDriverManager.chromedriver().setup();\par
+\tab   //ChromeOptions chromeoptions = new ChromeOptions();\par
+\tab   //chromeoptions.addArguments("--remote-allow-origns=*","ignore-certificate-errors");\par
+\tab   WebDriver driver= new ChromeDriver();\par
+\tab   driver.get("https://www.facebook.com/");\par
+\tab   driver.manage().window().maximize();\par
+\tab   driver.findElement(By.id("email")).sendKeys(Email);\par
+\tab   driver.findElement(By.id("pass")).sendKeys(Email);\par
+\tab   driver.findElement(By.xpath("//button[@data-testid = 'royal_login_button']")).click();\par
+\tab   driver.close();\par
+\}\par
+@DataProvider (name = "Login")\par
+  public Object[][] test() \{\par
+    return new Object[][] \{\par
+      new Object[] \{ "abc@gmail.com", "abs12" \},\par
+      new Object[] \{ "abcd@gmail.com", "bcd90" \},\par
+    \};\par
+  \}\par
+\}\par
+\par
+\par
+\par
+\par
+\par
+}
+ 

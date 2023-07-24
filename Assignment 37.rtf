@@ -1,0 +1,162 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\b\f0\fs28\lang9 ASSIGNMENT-37\par
+\ul API Testing\par
+\ulnone\par
+
+\pard\sa200\sl276\slmult1\b0 1. What is API Testing and why Postman is most popular tool for API Testing ?\par
+Ans: \ul\b Application Programming Interface \ulnone\b0 (API) is a software interface that allows two applications to interact with each other without any user intervention. API is defined as a code that helps two different software\rquote s to communicate and exchange data with each other. It offers products or services to communicate with other products and services without having to know how they\rquote re implemented.\par
+\ul\b API Testing \ulnone\b0 is a software testing type that validates Application Programming Interfaces (APIs). The purpose of API Testing is to check the functionality, reliability, performance, and security of the programming interfaces. In API Testing, instead of using standard user inputs(keyboard) and outputs, you use software to send calls to the API, get output, and note down the system\rquote s response. API tests are very different from GUI Tests and won\rquote t concentrate on the look and feel of an application. It mainly concentrates on the business logic layer of the software architecture.\par
+\ul\b Postman\ulnone\b0  is one of the most popular software testing tools which is used for API testing. With the help of this tool, developers can easily create, test, share, and document APIs. It is open source tool so that easily accessible.\par
+
+\pard\sa200\sl276\slmult1 1.) Postman is a standalone software testing API (Application Programming Interface) platform to build, test, design, modify, and document APIs. It is a simple Graphic User Interface for sending and viewing HTTP requests and responses.\par
+
+\pard\sa200\sl276\slmult1 2.) While using Postman, for testing purposes, one doesn't need to write any HTTP client network code. Instead, we build test suites called collections and let Postman interact with the API.\par
+3.) In this tool, nearly any functionality that any developer may need is embedded. This tool has the ability to make various types of HTTP requests like GET, POST, PUT, PATCH, and convert the API to code for languages like JavaScript and Python.\par
+\par
+2. What is the difference between Rest and Soap based API's ?\par
+Ans: The difference between Rest and Soap based API's are as:\par
+\ul\b REST\par
+\ulnone\b0 REST stands for REpresentational State Transfer.\par
+REST can make use of SOAP as the underlying protocol for web services, because in the end it is just an architectural pattern.\par
+REST permits different data format such as HTML, XML, JSON, etc. But the most preferred format for transferring data is JSON.\par
+REST uses Uniform Service locators to access to the components on the hardware device.\par
+REST doesn\rquote t need much bandwidth.\par
+\ul\b SOAP\ulnone\b0\par
+SOAP stands for Simple Object Access Protocol.\tab\par
+SOAP cannot make use of REST since SOAP is a protocol and REST is an architectural pattern.\tab\par
+SOAP can only work with XML format. As seen from SOAP messages, all data passed is in XML format.\tab\par
+SOAP uses service interfaces to expose its functionality to client applications.\par
+SOAP needs more bandwidth for its usage.\par
+\par
+3. What are the different http methods for API Testing ?\par
+Ans: There are 4 different http methods for API Testing :-\par
+\ul\b GET\ulnone\b0\f1\endash  The GET method is used to \f0\lang16393 fetch\f1\lang9  information from the given server using a given URI. While using GET request, it should only extract data and should have no other effect on the data.\par
+\ul\b POST\ulnone\b0\endash  A POST request is used to create a new entity. It can also be used to send data to the server,\f0\lang16393  add record, update and upload\f1\lang9  for example, customer information, file upload, etc. using HTML forms.\par
+\ul\b PUT\ulnone\b0\endash  \f0\lang16393 It is mainly used to \f1\lang9 update\f0\lang16393  \f1\lang9 an existing \f0\lang16393 data or record and also c\f1\lang9 reate a new entity.\par
+\ul\b DELETE\ulnone\b0\endash  Removes all current representations of the target resource given by a URI.\f0\lang16393  Used to remove or delete the record.\lang9\par
+\par
+4. What are the different Status codes available while doing API Testing ?\par
+Ans: There are many Status codes available while doing API Testing such as :\par
+\b 200 \b0 - Ok, The request was successful.\par
+\b 201 \b0 - Created, The request was successful and data was created. \par
+\b 204 \b0 - No Content, The response is empty.\par
+\b 400 \b0 - Bad Request, The request could not be understood or was missing rerquired parameter.\par
+\b 401 \b0 - Unauthorized, Authentication failed or user does not have permissions for the requested operation.\par
+\b 403 \b0 - Forbidden, Access denied.\par
+\b 404 \b0 - Not Found, The server can not find the request page.\par
+\b 500 \b0 - Internal Server Error, The requested was not completed. The server met an unexpected condition.\par
+\b 503 \b0 - Service Unavailable, The request was not completed. The server is temporarily overloading or down.\par
+\par
+5. What are the challenges faced in API Testing ?\par
+Ans: Challenges faced in API Testing are :\par
+1.) The main challenges in Web API testing are Parameter Combination, Parameter Selection, and Call Sequencing\par
+2.) There is no GUI available to test the application, which makes it difficult to give input values.\par
+3.) Validating and Verifying the output in a different system is a little difficult for testers.\par
+4.) Parameters selection and categorization are required to be known to the testers.\par
+5.) Exception handling function needs to be tested.\par
+6.) Coding knowledge is necessary for testers.\par
+\par
+6. Types of Output of an API ?\par
+Ans: Output of an API are of 3 types :-\par
+1.) Any type of data\par
+2.) Status (say Pass or Fail)\par
+3.) Call another API function.\par
+\ul\b Any Type of Data :\par
+\ulnone\b0 Example: There is an API function that should add two integer numbers.\par
+The numbers have to be given as input parameters. The output should be a summation of two integer numbers. This output needs to be verified with an expected outcome.\par
+\ul\b Status (say Pass or Fail) :\par
+\ulnone\b0 Consider the below API function \f1\endash\par
+Lock()\par
+Unlock()\par
+Delete()\par
+They return any value such as True (in case of success) or false (In case of error) as an output.\par
+A more accurate Test Case would be, can call the functions in any of the scripts and later check for changes either in the database or the Application GUI.\par
+\ul\b Calling of another API / Event\f0\lang16393  :\f1\lang9\par
+\ulnone\b0 In this case, we call one of the API function which in turn will call another function.\par
+For example \endash  First API function can be used for deleting a specified record in the table and this function, in turn, calls another function to REFRESH the database.\par
+\f0\par
+7. Test Cases for API Testing ?\par
+Ans: Test Cases for API Testing are besed on :\par
+\ul\b Return value based on input condition: \ulnone\b0 It is relatively easy to test, as input can be defined and results can be authenticated.\par
+\ul\b Does not return anything: \ulnone\b0 When there is no return value, a behavior of API on the system to be checked.\par
+\ul\b Trigger some other API/event/interrupt: \ulnone\b0 If an output of an API triggers some event or interrupt, then those events and interrupt listeners should be tracked.\par
+\ul\b Update data structure: \ulnone\b0 Updating data structure will have some outcome or effect on the system, and that should be authenticated.\par
+\ul\b Modify certain resources: \ulnone\b0 If API call modifies some resources then it should be validated by accessing respective resources.\par
+\par
+8. Approach of API Testing ?\par
+Ans: API Testing Approach is a predefined strategy or a method that the QA team will perform in order to conduct the API testing after the build is ready. This testing does not include the source code. The API testing approach helps to better understand the functionalities, testing techniques, input parameters and the execution of test cases.\par
+\ul\b API Testing approach:\par
+\ulnone\b0 1.) Understanding the functionality of the API program and clearly defining the scope of the program\par
+2.) Apply testing techniques such as equivalence classes, boundary value analysis, and error guessing and write test cases for the API\par
+3.) Input Parameters for the API need to be planned and defined appropriately\par
+4.) Execute the test cases and compare expected and actual results.\par
+\par
+9. Difference between API testing and Unit testing ?\par
+Ans: Difference between API testing and Unit testing are :-\par
+\ul\b API Testing - \par
+\ulnone\b0 Testers perform it.\par
+End-to-end functionality is tested.\par
+Testers cannot access the source code.\par
+Only API functions are tested.\par
+All functional issues are tested.\par
+Test run after the build is created.\par
+\ul\b Unit testing -\par
+\ulnone\b0 Developers perform it.\par
+Separate functionality is tested.\par
+A developer can access the source code.\par
+UI testing is also involved.\par
+Only basic functionalities are tested.\par
+Usually ran before check-in.\ul\b\par
+\ulnone\b0\par
+10. How to Test API ?\par
+Ans: API automation testing covers :-\par
+\ul\b Discovery testing: \ulnone\b0 The test group should manually execute the set of calls documented in the API like verifying that a specific resource exposed by the API can be listed, created and deleted as appropriate.\par
+\ul\b Usability testing: \ulnone\b0 This testing verifies whether the API is functional and user-friendly. And does API integrates well with another platform as well.\par
+\ul\b Security testing: \ulnone\b0 This testing includes what type of authentication is required and whether sensitive data is encrypted over HTTP or both.\par
+\ul\b Automated testing: \ulnone\b0 API testing should culminate in the creation of a set of scripts or a tool that can be used to execute the API regularly.\par
+\ul\b Documentation: \ulnone\b0 The test team has to make sure that the documentation is adequate and provides enough information to interact with the API. Documentation should be a part of the final deliverable.\par
+\par
+11. Best Practices of API Testing ?\par
+Ans: Best Practices of API Testing are :-\par
+1.) Test cases should be grouped by test category\par
+2.) On top of each test, you should include the declarations of the APIs being called.\par
+3.) Parameters selection should be explicitly mentioned in the test case itself\par
+4.) Prioritize API function calls so that it will be easy for testers to test\par
+5.) Each test case should be as self-contained and independent from dependencies as possible\par
+6.) Avoid \ldblquote test chaining\rdblquote  in your development\par
+7.) Special care must be taken while handling one-time call functions like \f1\endash  Delete, CloseWindow, etc\'85\par
+\f0\lang16393 8.) \f1\lang9 Call sequencing should be performed and well planned\par
+\f0\lang16393 9.) \f1\lang9 To ensure complete test coverage, create API test cases for all possible input combinations of the API.\par
+\f0\par
+12. Types of Bugs that API Testing detects ?\par
+Ans: Bugs that API Testing detects are :-\par
+1.) Fails to handle error conditions gracefully.\par
+2.) Unused flags.\par
+3.) Missing or duplicate functionality.\par
+4.) Reliability Issues. Difficulty in connecting and getting a response from API.\par
+5.) Security Issues.\par
+6.) Multi-threading issues.\par
+7.) Performance Issues. API response time is very high.\par
+8.) Improper errors/warning to a caller.\par
+9.) Incorrect handling of valid argument values.\par
+10.) Response Data is not structured correctly (JSON or XML).\par
+\par
+13. How to do API Test Automation ?\par
+Ans: \ul\b ReadyAPI :\par
+\ulnone\b0 ReadyAPI is a leading tool for functional, security, and load testing of RESTful, SOAP, GraphQL, and other web services. In one intuitive platform, you will get three powerful tools: ReadyAPI Test, ReadyAPI Performance, and ReadyAPI Virtualization. With these tools you can perform functional, security, and performance/load testing. You can also mock API & web services with our robust virtualization tool. Additionally, you can easily integrate your CI/CD pipeline during every build.\par
+\par
+14. Challenges of API Testing ?\par
+Ans: Challenges of API Testing are :\par
+1.) The main challenges in Web API testing are Parameter Combination, Parameter Selection, and Call Sequencing.\par
+2.) There is no GUI available to test the application, which makes it difficult to give input values.\par
+3.) Validating and Verifying the output in a different system is a little difficult for testers.\par
+4.) Parameters selection and categorization are required to be known to the testers.\par
+5.) Exception handling function needs to be tested.\par
+6.) Coding knowledge is necessary for testers.\par
+\par
+\par
+\par
+\par
+}
+ 
